@@ -35,7 +35,7 @@ def none_is_none(*args):
     return all((it is not None for it in args))
 
 
-prefix = "template"
+prefix = "version"
 
 with (open(sys.argv[1], mode='r') if len(sys.argv) > 1 else sys.stdin) as file:
     for line in file.readlines():
